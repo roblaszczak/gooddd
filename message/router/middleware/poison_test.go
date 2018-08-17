@@ -3,7 +3,7 @@ package middleware_test
 import (
 	"testing"
 
-	"github.com/maclav3/gooddd/message/router/middleware"
+	"github.com/roblaszczak/gooddd/message/router/middleware"
 	"github.com/pkg/errors"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
