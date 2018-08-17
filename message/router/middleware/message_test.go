@@ -93,7 +93,7 @@ var handlerFuncAlwaysOKMessages = []message.ProducedMessage{
 	NewMockProducedMessage(3.141592653589793238),
 }
 
-func handlerFuncAlwaysOK(msg message.ConsumedMessage) ([]message.ProducedMessage, error) {
+func handlerFuncAlwaysOK(message.ConsumedMessage) ([]message.ProducedMessage, error) {
 	return handlerFuncAlwaysOKMessages, nil
 }
 
@@ -103,7 +103,6 @@ func handlerFuncAlwaysFailing(message.ConsumedMessage) ([]message.ProducedMessag
 
 func handlerFuncAlwaysPanicking(message.ConsumedMessage) ([]message.ProducedMessage, error) {
 	panic(errPanicked)
-	return nil, errPanicked
 }
 
 type mockConsumedMessage struct {
